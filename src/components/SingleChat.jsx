@@ -253,7 +253,6 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
           </Text>
         </Box>
       )}
-      ;
     </>
   );
 }

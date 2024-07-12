@@ -34,7 +34,7 @@ function HomePage() {
         borderWidth="1px"
       >
         <Text fontSize="4xl" fontFamily="Work sans" color="black">
-          GHOPSTTEXT
+          GHOSTTEXT
         </Text>
       </Box>
       <Box

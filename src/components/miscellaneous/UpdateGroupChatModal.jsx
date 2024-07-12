@@ -107,7 +107,7 @@ function UpdateGroupChatModal({ fetchAgain, setFetchAgain, fetchMessages }) {
         },
       };
       const { data } = await axios.put(
-        "http://localhost:5000/api/chat/groupremove",
+        `${BASE_URL}/api/chat/groupremove`,
         { chatId: selectedChat._id, userId: user1._id },
         config
       );
@@ -140,7 +140,7 @@ function UpdateGroupChatModal({ fetchAgain, setFetchAgain, fetchMessages }) {
         },
       };
       const { data } = await axios.put(
-        "http://localhost:5000/api/chat/rename",
+        `${BASE_URL}/api/chat/rename`,
         { chatId: selectedChat._id, chatName: groupChatName },
         config
       );
@@ -175,7 +175,7 @@ function UpdateGroupChatModal({ fetchAgain, setFetchAgain, fetchMessages }) {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        `${BASE_URL}/api/user?search=${search}`,
         config
       );
       //   console.log(data);

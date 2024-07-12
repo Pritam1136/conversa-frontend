@@ -40,17 +40,17 @@ function Login() {
       setLoading(false);
       return;
     }
-    // if (email === "guest@example.com") {
-    //   toast({
-    //     title: "Guest account is now disabled",
-    //     status: "warning",
-    //     duration: 5000,
-    //     isClosable: true,
-    //     position: "bottom",
-    //   });
-    //   setLoading(false);
-    //   return;
-    // }
+    if (email === "guest@example.com") {
+      toast({
+        title: "Guest account is now disabled",
+        status: "warning",
+        duration: 5000,
+        isClosable: true,
+        position: "bottom",
+      });
+      setLoading(false);
+      return;
+    }
 
     try {
       const config = {
